@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação Linear e Algoritmo Simplex</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <style>
+        body {
+            padding-top: 60px; /* Para ajustar o conteúdo abaixo do cabeçalho fixo */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">PL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Página Inicial</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Programação Linear<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sobre.html">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Programação Linear e Algoritmo Simplex</h1>
+                <p>A programação linear é uma técnica matemática utilizada para otimizar um resultado desejado, como maximizar lucros ou minimizar custos, dentro de um conjunto de restrições lineares. O Algoritmo Simplex é um método eficiente para resolver problemas de programação linear.</p>
+            </div>
+        </div>
+
+        <!-- Seção de Programação Linear -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h2>Programação Linear</h2>
+                <br >
+                <h4>O que é?</h4>
+                <p>
+                    A programação linear é uma técnica matemática utilizada para otimizar o uso de recursos limitados, como tempo, dinheiro, espaço, entre outros. Ela é especialmente útil em situações onde se deseja maximizar lucros, minimizar custos, ou alcançar outros objetivos similares, sujeitos a certas restrições.
+                </p>
+                <p>
+                    Em termos simples, a programação linear envolve a maximização ou minimização de uma função linear, sujeita a um conjunto de restrições lineares. A função a ser otimizada é chamada de função objetivo, enquanto as restrições representam as limitações impostas ao problema.
+                </p>
+                <p>
+                    Este tipo de técnica é amplamente utilizado em diversas áreas, como logística, economia, engenharia, gestão de produção, entre outras, para resolver problemas complexos de forma eficiente e encontrar soluções ótimas.    
+                </p>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/D6d6HbKJroI?si=Gaa1SIAPidkU7ZS9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                
+                </div>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/H5KYdQu5u8Q?si=XcE7M2zvv9ld95qB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4AbjF8Lehe8?si=67hop0SDQvEcSi0n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mjqI5s_-xfQ?si=gN-rqlXCPHlVbIcp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção do Algoritmo Simplex -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h2>Algoritmo Simplex</h2>
+                <h4>O que é?</h4>
+                <p>
+                    O algoritmo simplex é um método computacional eficiente usado para resolver problemas de programação linear, encontrando a solução ótima através de iterações que exploram vértices de um poliedro convexo formado pelas restrições do problema. Ele ajusta iterativamente as variáveis de decisão para maximizar ou minimizar uma função objetivo linear, movendo-se de um vértice a outro até alcançar a solução ótima.
+                </p>
+                <h4>Uma visão geral</h4>
+                <p>O Algoritmo Simplex começa com uma solução básica viável e a melhora passo a passo, movendo-se para uma solução adjacente que reduz o valor da função objetivo, até que não seja mais possível fazer tal movimento.</p>
+                <h4>Funcionamento</h4>
+                <p>O processo envolve selecionar uma variável de entrada que deve aumentar para melhorar o valor da função objetivo, e uma variável de saída que deve ser removida da base, mantendo as restrições satisfeitas.</p>
+                <h4>Minimização</h4>
+                <p>
+                    Minimização é o processo de encontrar o menor valor possível de uma função, seja ela linear, não-linear, ou de outro tipo. Em contextos matemáticos e de otimização, a minimização geralmente envolve encontrar o ponto onde uma função atinge seu valor mínimo, sujeito a certas condições ou restrições. Isso é fundamental em diversas áreas, como economia, engenharia, ciência da computação e física, onde é crucial encontrar soluções que otimizem recursos ou custos.
+                </p>
+                <h4>Maximização</h4>
+                <p>
+                    Maximização é o processo oposto à minimização, onde o objetivo é encontrar o maior valor possível de uma função. Em problemas de otimização, a maximização envolve encontrar o ponto onde uma função atinge seu valor máximo, sujeito a restrições ou condições específicas. Isso é crucial em diversas áreas, como economia, engenharia, ciência da computação e gestão, onde maximizar lucros, eficiência ou outros objetivos é fundamental para alcançar resultados ótimos.
+                </p>
+                <h4>Tableau</h4>
+                <p>
+                    Em programação linear, o termo "tableau" se refere a uma representação tabular estruturada da solução corrente de um problema de programação linear, especialmente durante a aplicação do algoritmo simplex. Um tableau contém informações sobre as variáveis de decisão, as restrições do problema e a função objetivo, organizadas de forma a facilitar os cálculos iterativos necessários para encontrar a solução ótima. Ele inclui coeficientes das variáveis básicas e não básicas, bem como valores constantes das restrições, todos organizados em linhas e colunas. Durante cada iteração do algoritmo simplex, o tableau é atualizado para refletir as mudanças nas variáveis básicas e não básicas, movendo-se em direção à solução ótima do problema de maximização ou minimização.
+                </p>
+                <h4>Algoritmo com um Tableau (Método Tabular)</h4>
+                <p>
+                    O método do Tableau, também conhecido como Método Tabular, é uma técnica essencial na resolução de problemas de programação linear. Ele utiliza tabelas ou matrizes chamadas de Tableaux para representar e resolver sistemas de equações lineares que surgem na formulação de problemas de otimização. Cada Tableau contém informações cruciais como variáveis de decisão, restrições do problema, custos reduzidos e valores das variáveis de folga. O processo começa com a formulação do problema em sua forma padrão, seguida pela criação do primeiro Tableau. A partir daí, iterações sucessivas são feitas aplicando regras específicas para atualizar o Tableau até que a solução ótima seja encontrada ou a falta de viabilidade seja determinada. Esse método é particularmente útil porque organiza e sistematiza o processo de encontrar soluções viáveis e ótimas para problemas de programação linear de maneira eficiente e estruturada.
+                </p>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pxJ-Gk6Eh-4?si=hAhXrwjUIcE067zP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/w047PccELc4?si=Wh93xAF9hWR0iLep" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5nkP3WmkT-o?si=bDu5D9MFfkL_5_Hd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/D6d6HbKJroI?si=Id86ImaVRVeJrf4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZobohKwNFPY?si=irQ4FawnCPUC03vH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS e scripts adicionais -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+<!-- Footer -->
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container text-center">
+        <span class="text-muted">Desenvolvido por Eric e Diogo &copy; 2024</span>
+    </div>
+</footer>
+
+</html>
